@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Arip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🎵 Playlist Favorit Lipziee</h1>
+            <p>Music that hits different 🔥</p>
+        </header>
+
+        <!-- Player Utama -->
+        <div class="player">
+            <div class="album-art">
+                <img id="cover" src="cover1.png" alt="Album Cover">
+            </div>
+
+            <div class="info">
+                <h2 id="title">Judul Lagu</h2>
+                <p id="artist">Artis - Album</p>
+            </div>
+
+            <!-- Progress -->
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress" value="0" max="100">
+                <span id="duration">0:00</span>
+            </div>
+
+            <!-- Controls -->
+<div class="controls">
+    <button id="prev"><i class="fas fa-step-backward"></i></button>
+    <button id="play" class="play-btn"><i class="fas fa-play"></i></button>
+    <button id="next"><i class="fas fa-step-forward"></i></button>
+    
+    <!-- Tombol Repeat Baru -->
+    <button id="repeat" class="repeat-btn">
+        <i class="fas fa-redo"></i>
+    </button>
+</div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+            <h3>🎶 Daftar Lagu</h3>
+            <ul id="playlist">
+                <!-- Lagu akan ditambah lewat JS -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audio" preload="metadata"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
